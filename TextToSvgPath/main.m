@@ -126,8 +126,15 @@ int main (int argc, const char * argv[])
 
     if (doHeaders) {
         fprintf(stdout, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-        fprintf(stdout, "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n");
-        fprintf(stdout, "<svg xmlns=\"http://www.w3.org/2000/svg\" xml:space=\"preserve\" style=\"shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n");
+        fprintf(stdout, "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\""
+                        " \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n");
+        fprintf(stdout, "<svg xmlns=\"http://www.w3.org/2000/svg\""
+                        " xml:space=\"preserve\""
+                        " style=\"shape-rendering:geometricPrecision;"
+                                 " text-rendering:geometricPrecision;"
+                                 " image-rendering:optimizeQuality;"
+                                 " fill-rule:evenodd; clip-rule:evenodd\""
+                        " xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n");
         fprintf(stdout, "  <path d=\"");
     }
     
