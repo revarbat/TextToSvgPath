@@ -67,7 +67,7 @@
 		 and then flip the resulting NSBezierPath right side up again to achieve
 		 our final result with the lines in the right order and the text with
 		 proper orientation.  */
-    [theImage lockFocusFlipped:YES];
+    [theImage lockFocusFlipped:NO];
 
 		/* draw all of the glyphs to collecting them into a bezier path
 		using our custom layout class. */
@@ -95,10 +95,10 @@
     
     transform.m11 =  1.0;
     transform.m12 =  0.0;
-    transform.tX  = -[theFont leading];
+    transform.tX  = -[bezier bounds].origin.x;
     transform.m21 =  0.0;
     transform.m22 =  1.0;
-    transform.tY  = -[bezier bounds].origin.y+[theFont descender];
+    transform.tY  = -[bezier bounds].origin.y;
     //transform.tY  = -[theFont ascender]; // +[theFont descender];
     [affine setTransformStruct:transform];
     [bezier transformUsingAffineTransform:affine];
