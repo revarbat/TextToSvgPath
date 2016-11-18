@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0749F4061DDEC00100C61326 /* NSBezierPath+EMMBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0749F4041DDEC00100C61326 /* NSBezierPath+EMMBezierPath.m */; };
 		A392293513DD23E500AC4F60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A392293413DD23E500AC4F60 /* Foundation.framework */; };
 		A392293813DD23E500AC4F60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A392293713DD23E500AC4F60 /* main.m */; };
 		A392293C13DD23E500AC4F60 /* TextToSvgPath.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A392293B13DD23E500AC4F60 /* TextToSvgPath.1 */; };
-		A392294413DD262500AC4F60 /* SpeedyCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = A392294313DD262500AC4F60 /* SpeedyCategories.m */; };
 		A392294613DD705500AC4F60 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A392294513DD705500AC4F60 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,13 +28,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0749F4041DDEC00100C61326 /* NSBezierPath+EMMBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+EMMBezierPath.m"; sourceTree = "<group>"; };
+		0749F4051DDEC00100C61326 /* NSBezierPath+EMMBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+EMMBezierPath.h"; sourceTree = "<group>"; };
 		A392293013DD23E500AC4F60 /* TextToSvgPath */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TextToSvgPath; sourceTree = BUILT_PRODUCTS_DIR; };
 		A392293413DD23E500AC4F60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A392293713DD23E500AC4F60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A392293A13DD23E500AC4F60 /* TextToSvgPath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextToSvgPath-Prefix.pch"; sourceTree = "<group>"; };
 		A392293B13DD23E500AC4F60 /* TextToSvgPath.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TextToSvgPath.1; sourceTree = "<group>"; };
-		A392294213DD262500AC4F60 /* SpeedyCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedyCategories.h; sourceTree = "<group>"; };
-		A392294313DD262500AC4F60 /* SpeedyCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedyCategories.m; sourceTree = "<group>"; };
 		A392294513DD705500AC4F60 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -80,9 +80,9 @@
 		A392293613DD23E500AC4F60 /* TextToSvgPath */ = {
 			isa = PBXGroup;
 			children = (
+				0749F4041DDEC00100C61326 /* NSBezierPath+EMMBezierPath.m */,
+				0749F4051DDEC00100C61326 /* NSBezierPath+EMMBezierPath.h */,
 				A392293713DD23E500AC4F60 /* main.m */,
-				A392294213DD262500AC4F60 /* SpeedyCategories.h */,
-				A392294313DD262500AC4F60 /* SpeedyCategories.m */,
 				A392293B13DD23E500AC4F60 /* TextToSvgPath.1 */,
 				A392293913DD23E500AC4F60 /* Supporting Files */,
 			);
@@ -122,6 +122,8 @@
 /* Begin PBXProject section */
 		A392292713DD23E500AC4F60 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = A392292A13DD23E500AC4F60 /* Build configuration list for PBXProject "TextToSvgPath" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -144,8 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0749F4061DDEC00100C61326 /* NSBezierPath+EMMBezierPath.m in Sources */,
 				A392293813DD23E500AC4F60 /* main.m in Sources */,
-				A392294413DD262500AC4F60 /* SpeedyCategories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
