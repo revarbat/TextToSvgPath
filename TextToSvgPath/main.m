@@ -7,8 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "SpeedyCategories.h"
-
+#import "NSBezierPath+EMMBezierPath.h"
 
 void usage(const char* arg0);
 
@@ -89,8 +88,12 @@ int main (int argc, const char * argv[])
         fprintf(stderr, "Unknown font: '%s'\n", [fontName UTF8String]);
         exit(-2);
     }
-    NSBezierPath *bezierPath = [text bezierWithFont:font];
-    
+
+    NSBezierPath *bezierPath = [NSBezierPath bezierPath];
+    [bezierPath moveToPoint:(NSPoint){0, 0}];
+    [bezierPath appendBezierPathWithString:text font:font];
+    [bezierPath transformIntoSVGCoordinateSpace];
+
     NSMutableString *outStr = [[[NSMutableString alloc] init] autorelease];
     NSInteger elements = [bezierPath elementCount];
     for (int i = 0; i < elements; i++) {
